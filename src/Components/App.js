@@ -5,11 +5,12 @@ import { Dashboard } from './Dashboard'
 
 
 
+
 function App() {
   const [id, setId] = useLocalStorage('id')
 
   return (
-
+ 
     id ? <Dashboard id={id} /> : <Login onIdSubmit={setId} />
   )
 }
